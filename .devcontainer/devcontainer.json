@@ -2,9 +2,10 @@
   "name": "latex-thesis-template",
   "dockerComposeFile": "docker-compose.yml",
   "extensions": [
-    "James-Yu.latex-workshop",
-    "GitHub.copilot"
-  ],
+	"James-Yu.latex-workshop",
+	"GitHub.copilot",
+	"seatonjiang.gitmoji-vscode"
+],
   "service": "texlive-ja",
   "settings": {
     "terminal.integrated.shell": {

@@ -1,4 +1,4 @@
-FROM paperist/texlive-ja:latest AS texlive-ja
+FROM paperist/texlive-ja:alpine AS texlive-ja
 
 FROM node:16-alpine3.16
 # move texlive-ja
