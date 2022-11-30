@@ -1,0 +1,37 @@
+{
+  "name": "latex-thesis-template",
+  "dockerComposeFile": "docker-compose.yml",
+  "extensions": [
+    "James-Yu.latex-workshop",
+    "GitHub.copilot"
+  ],
+  "service": "texlive-ja",
+  "settings": {
+    "terminal.integrated.shell": {
+      "linux": "/bin/bash"
+    },
+    "latex-workshop.latex.autoBuild.interval": 0,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk",
+        "tools": ["latexmk"]
+      }
+    ],
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": ["-silent", "%DOC%"],
+        "env": {}
+      }
+    ],
+    "latex-workshop.latexindent.path": "/usr/local/texlive/2020/bin/x86_64-linux/latexindent",
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab"
+  },
+  "workspaceFolder": "/workdir",
+  "shutdownAction": "stopCompose"
+}
