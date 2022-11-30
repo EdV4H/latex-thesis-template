@@ -859,3 +859,6 @@ TSWLatexianTemp*
 
 # generated pdf file
 src/**/*.pdf
+
+# node_modules
+node_modules

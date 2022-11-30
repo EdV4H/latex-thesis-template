@@ -1,0 +1,24 @@
+{
+  "name": "latex-thesis-template",
+  "version": "1.0.0",
+  "description": "latex-thesis-template",
+  "main": "",
+  "scripts": {
+    "textlint": "textlint */**.tex",
+    "textlint:fix": "textlint --fix */**.tex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdV4H/latex-thesis-template.git"
+  },
+  "author": "Yusuke Maruyama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdV4H/latex-thesis-template/issues"
+  },
+  "homepage": "https://github.com/EdV4H/latex-thesis-template#readme",
+  "devDependencies": {
+    "textlint": "^12.2.3",
+    "textlint-plugin-latex2e": "^1.2.0"
+  }
+}
