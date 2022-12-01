@@ -7,6 +7,7 @@ WORKDIR /workdir
 COPY --from=texlive-ja /usr/local/texlive /usr/local/texlive
 RUN apk add --no-cache \
   bash \
+  openssh \
   git \
   perl \
   wget

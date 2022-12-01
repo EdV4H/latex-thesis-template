@@ -2,12 +2,15 @@
   "name": "latex-thesis-template",
   "dockerComposeFile": "docker-compose.yml",
   "extensions": [
-	"James-Yu.latex-workshop",
-	"GitHub.copilot",
-	"seatonjiang.gitmoji-vscode"
-],
+    "James-Yu.latex-workshop",
+    "GitHub.copilot",
+    "seatonjiang.gitmoji-vscode"
+  ],
   "service": "texlive-ja",
   "settings": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
     "terminal.integrated.shell": {
       "linux": "/bin/bash"
     },
@@ -17,14 +20,19 @@
     "latex-workshop.latex.recipes": [
       {
         "name": "latexmk",
-        "tools": ["latexmk"]
+        "tools": [
+          "latexmk"
+        ]
       }
     ],
     "latex-workshop.latex.tools": [
       {
         "name": "latexmk",
         "command": "latexmk",
-        "args": ["-silent", "%DOC%"],
+        "args": [
+          "-silent",
+          "%DOC%"
+        ],
         "env": {}
       }
     ],
