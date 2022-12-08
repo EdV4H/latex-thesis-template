@@ -1,11 +1,11 @@
 {
   "name": "latex-thesis-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "latex-thesis-template",
   "main": "",
   "scripts": {
-    "textlint": "textlint */**.tex",
-    "textlint:fix": "textlint --fix */**.tex"
+    "textlint": "textlint src/**/*.tex",
+    "textlint:fix": "textlint --fix src/**/*.tex"
   },
   "repository": {
     "type": "git",

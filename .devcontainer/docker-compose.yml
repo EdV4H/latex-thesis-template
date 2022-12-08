@@ -6,6 +6,7 @@ services:
     environment:
       SHELL: "/bin/bash"
     command: sleep infinity
+    platform: linux/amd64
     volumes:
       - ../:/workdir
       - ../.latexmkrc:/root/.latexmkrc

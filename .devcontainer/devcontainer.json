@@ -36,7 +36,6 @@
         "env": {}
       }
     ],
-    "latex-workshop.latexindent.path": "/usr/local/texlive/2020/bin/x86_64-linux/latexindent",
     "latex-workshop.message.update.show": false,
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab"

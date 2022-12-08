@@ -1,0 +1,36 @@
+name: release
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Compile Tex File
+        id: compile_tex_file
+        uses: sakolab/scis2023-thesis-maruyama@main
+        with: 
+          LATEX_FILE_NAME: "src/main.tex"
+      
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.event.pull_request.title }}
+          tag_name: ${{ github.event.pull_request.title }}
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+          files: src/main.pdf
+      
