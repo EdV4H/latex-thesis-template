@@ -3,6 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "extensions": [
     "James-Yu.latex-workshop",
+    "hediet.vscode-drawio",
     "GitHub.copilot",
     "seatonjiang.gitmoji-vscode"
   ],
